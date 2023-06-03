@@ -19,6 +19,12 @@ add_library(
         ${sources}
 )
 
+add_executable(
+        ${CMAKE_PROJECT_NAME}_exe
+        ${sources}
+        main.cpp
+)
+
 #Tests Include
 
 include(FetchContent)

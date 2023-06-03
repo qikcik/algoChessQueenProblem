@@ -1,6 +1,13 @@
 #include <iostream>
 
+#include "algorithm.hpp"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    Algorithm algorithm(8);
+
+    //for(auto& solIt : algorithm.getAllPossibleSolution() )
+    //    std::cout << solIt;
+
+    std::cout << "number of possible solution:" << algorithm.getAllPossibleSolution().size();
     return 0;
 }
